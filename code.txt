@@ -1,0 +1,131 @@
+import numpy as np
+# =====================================
+#  Creating Arrays
+# =====================================
+arr1 = np.array([10, 20, 30, 40, 50])
+print("\nOriginal Array:")
+print(arr1)
+# =====================================
+# Array Properties
+# =====================================
+print("\nShape:", arr1.shape)
+print("Dimensions:", arr1.ndim)
+print("Data Type:", arr1.dtype)
+print("Size:", arr1.size)
+
+# =====================================
+# Mathematical Operations
+# =====================================
+
+print("\nAddition:")
+print(arr1 + 10)
+
+print("\nSubtraction:")
+print(arr1 - 5)
+
+print("\nMultiplication:")
+print(arr1 * 2)
+
+print("\nDivision:")
+print(arr1 / 2)
+
+# =====================================
+#  Statistical Functions
+# =====================================
+
+print("\nSum:", np.sum(arr1))
+print("Mean:", np.mean(arr1))
+print("Maximum:", np.max(arr1))
+print("Minimum:", np.min(arr1))
+print("Standard Deviation:", np.std(arr1))
+
+# =====================================
+# Special Arrays
+# =====================================
+
+print("\nZeros Array:")
+print(np.zeros((2, 3)))
+
+print("\nOnes Array:")
+print(np.ones((2, 3)))
+
+print("\nIdentity Matrix:")
+print(np.eye(3))
+
+# =====================================
+# Range Functions
+# =====================================
+
+print("\nArange:")
+print(np.arange(1, 11))
+
+# =====================================
+# Reshape
+# =====================================
+
+arr2 = np.arange(1, 13)
+
+print("\nOriginal:")
+print(arr2)
+
+reshaped = arr2.reshape(3, 4)
+
+print("\nReshaped (3x4):")
+print(reshaped)
+
+# =====================================
+# Matrix Operations
+# =====================================
+
+A = np.array([[1, 2],
+              [3, 4]])
+
+B = np.array([[5, 6],
+              [7, 8]])
+
+print("\nMatrix A:")
+print(A)
+
+print("\nMatrix B:")
+print(B)
+
+print("\nMatrix Addition:")
+print(A + B)
+
+print("\nMatrix Multiplication:")
+print(np.dot(A, B))
+
+print("\nTranspose:")
+print(A.T)
+
+
+# =====================================
+# Sorting
+# =====================================
+
+arr3 = np.array([50, 20, 40, 10, 30])
+
+print("\nUnsorted:")
+print(arr3)
+
+print("\nSorted:")
+print(np.sort(arr3))
+
+# =====================================
+# Combining Arrays
+# =====================================
+
+a = np.array([1, 2, 3])
+b = np.array([4, 5, 6])
+
+print("\nConcatenate:")
+print(np.concatenate((a, b)))
+
+# =====================================
+#  Unique Values
+# =====================================
+
+arr4 = np.array([1, 2, 2, 3, 3, 4])
+
+print("\nUnique Values:")
+print(np.unique(arr4))
